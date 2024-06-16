@@ -1,0 +1,38 @@
+
+.search-form {
+    margin-left: 470px;
+}
+
+.search-form input {
+    border: 0; /* Remove a borda padrão */
+    font-size: 14px; /* Define o tamanho da fonte */
+    border-radius: 30px; /* Adiciona borda arredondada */
+    padding: 7px 20px; /* Adiciona padding interno */
+    border: 1px solid rgba(218, 223, 225, 0.3); /* Define a borda com transparência */
+    background-color: var(--bgColor); /* Define a cor de fundo com uma variável CSS */
+    transition: 0.3s; /* Adiciona uma transição suave para mudanças */
+    width: 450px; /* Define a largura do input */
+}
+
+.search-form input:focus,
+.search-form input:hover {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); /* Adiciona uma sombra ao redor do input */
+    border: 1px solid rgba(218, 223, 225, 0.4); /* Define a borda com maior transparência ao focar */
+}
+
+.search-form button {
+    border: 0; /* Remove a borda padrão */
+    padding: 0; /* Remove o padding padrão */
+    margin-left: 15px; /* Adiciona margem à esquerda negativa para posicionamento */
+    background: none; /* Remove o fundo padrão */
+    position: relative; /* Define a posição relativa */
+}
+
+.header .search-form button svg {
+    color: white; /* Define a cor do ícone */
+    height: 1.5rem; /* Define a altura do ícone */
+    position: absolute; /* Define a posição absoluta */
+    left: -50px; /* Alinha horizontalmente */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+}

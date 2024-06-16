@@ -1,0 +1,9 @@
+.header {
+   display: flex; /* Define o layout flexível para o elemento */
+   justify-content: space-between; /* Distribui o espaço igualmente entre os itens, com espaços nos extremos */
+   align-items: center; /* Alinha os itens verticalmente ao centro */
+   height: 65px; /* Define a altura do cabeçalho */
+   position: top; /* A propriedade 'top' não é válida aqui. Use 'position: fixed' ou 'position: absolute' com 'top: 0' para fixar a posição */
+   z-index: 0;
+   margin-left: 50px;
+}

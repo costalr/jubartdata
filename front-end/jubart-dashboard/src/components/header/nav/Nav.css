@@ -1,0 +1,230 @@
+/* Define a posição relativa do contêiner de notificação */
+.nav-notice {
+    position: relative;
+}
+
+/* Mostra o menu de notificações quando o contêiner de notificação é hoverado */
+.nav-notice:hover .notice-menu {
+    display: block;
+
+}
+
+/* Estiliza a lista de navegação no cabeçalho */
+.header-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-right: 15px;
+    background-color: var(--bgColor);
+    border: none;
+}
+
+/* Estiliza os ícones de navegação */
+.header-nav .nav-icon svg {
+    font-size: 5px;
+    position: relative;
+    color: white;
+    height: 30px;
+}
+
+/* Estiliza o badge que mostra o número de notificações */
+.header-nav .badge-number {
+    position: absolute;
+    inset: -20px 25px auto auto;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 0px 6px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 50px;
+
+}
+
+
+
+/* Estiliza o menu de notificações */
+.notice-menu {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    background-color: var(--bgColor);
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+/* Estiliza o contêiner de itens de navegação */
+.nav-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Estiliza cada item de notificação */
+.notification-item {
+    display: flex;
+    width: 320px;
+    height: 70px;
+    padding: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estiliza os ícones SVG nos itens de notificação */
+.notification-item svg {
+    height: 25px;
+    margin-left: -15px;
+    margin-right: 20px;
+    color: var(--primary);
+}
+
+/* Estiliza o título das notificações */
+.notification-item h4 {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--sixth);
+}
+
+/* Estiliza os parágrafos das notificações */
+.notification-item p {
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: white;
+}
+
+/* Muda a cor de fundo do parágrafo ao passar o mouse sobre ele */
+.header-nav .notifications .notification-item p:hover {
+    background-color: var(--sixth);
+}
+
+/* Estiliza o botão para expandir o menu */
+.expand-button {
+    color: white;
+    font-size: 12px;
+}
+
+/* Estiliza o contêiner do botão de expansão */
+.notification-expand button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+/* Estiliza o contêiner do perfil na navegação */
+.nav-profile {
+    display: flex;
+    align-items: center;
+    margin-left: -25px; 
+    margin-right: -20px;
+    position: relative;
+    width: 150px;
+}
+
+/* Estiliza a imagem do perfil */
+.nav-profile > img {
+    max-height: 36px;
+    border-radius: 40px;
+    margin-right: 10px; 
+    position: absolute;
+    top: -9px;
+}
+
+/* Estiliza o texto ao lado da imagem do perfil */
+.nav-profile > span {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-left: 40px;
+}
+
+/* Estiliza os botões dentro dos itens de navegação */
+.nav-item button {
+    background-color: var(--bgColor);
+    border: none;
+}
+
+/* Estiliza o menu do avatar */
+.avatar-menu {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    right: -28px;
+    top: 37px;
+    
+}
+
+
+/* Estiliza o cabeçalho do menu dropdown */
+.dropdown-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estiliza os títulos do cabeçalho do menu dropdown */
+.dropdown-header h6 {
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+}
+
+/* Estiliza os spans do cabeçalho do menu dropdown */
+.dropdown-header span {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Estiliza os itens do menu */
+.menu-item {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    background-color: var(--bgColor);
+    padding-left: 60px;
+}
+
+.menu-item a:hover {
+    background-color: var(--bgColor);
+
+}
+
+/* Estiliza os ícones SVG nos itens do menu */
+.menu-item svg {
+    color: white;
+    width:  20px;
+    margin-left: -55px;
+}
+
+/* Estiliza o texto nos itens do menu */
+.menu-item span {
+    color: white;
+    font-size: 12px;
+    position: absolute; 
+    left: 35%;
+}
+
+/* Estiliza o texto de logout */
+.logout span {
+    color: red;
+    transform: translateY(10%);
+}
+
+/* Estiliza o botão de notificações */
+.header-nav .bi-bell svg {
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    
+}

@@ -1,0 +1,92 @@
+/* Define box-sizing para incluir padding e borda nas dimensões dos elementos, e zera margens e paddings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a navegação da sidebar, define margem superior e zera o padding */
+.sidebar-nav {
+    margin-top: 40px;
+    padding: 0;
+}
+
+/* Remove sublinhado dos links na sidebar */
+.sidebar-link {
+    text-decoration: none;
+}
+
+/* Define padding, largura e cor de fundo dos itens da sidebar */
+.sidebar-item {
+    padding: 15px 20px;
+    width: 290px;
+    background-color: var(--bgColor); /* Usa uma variável CSS para a cor de fundo */
+}
+
+/* Adiciona margem esquerda aos sub-itens da sidebar */
+.sub-item {
+    margin-left: 25px;
+}
+
+/* Define margem direita para ícones SVG dentro dos itens da sidebar */
+.sidebar-item svg {
+    margin-right: 15px;
+}
+
+/* Estilo para o botão que alterna a exibição da sidebar */
+#toggle-sidebar-btn {
+    margin-top: 18px;
+    margin-left: 10px;
+    border: none;
+}
+
+/* Define largura e cor dos ícones SVG dentro do botão de alternância da sidebar */
+#toggle-sidebar-btn svg {
+    width: 40px;
+    color: var(--primary); /* Usa uma variável CSS para a cor primária */
+}
+
+/* Define largura e cor dos ícones SVG dentro dos itens da sidebar */
+.sidebar-item svg {
+    width: 30px;
+    color: var(--primary); /* Usa uma variável CSS para a cor primária */
+}
+
+/* Define a cor do texto dentro dos itens da sidebar */
+.sidebar-item span {
+    color: white;
+}
+
+/* Remove estilo de lista e define cor de fundo (a cor está faltando e deve ser especificada) */
+li {
+    list-style: none;
+    background-color: /* Especificar cor de fundo aqui */;
+}
+
+/* Estilo para o wrapper, margem superior está faltando um valor */
+.wrapper {
+    margin-top: /* Especificar valor da margem aqui */;
+}
+
+/* Estilo para a sidebar, define largura inicial, z-index, transição, cor de fundo e layout */
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #0e2238;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para a sidebar quando expandida, define nova largura e largura mínima */
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+/* Oculta logo e texto dos links na sidebar quando não está expandida */
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
