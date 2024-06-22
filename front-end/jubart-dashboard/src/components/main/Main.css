@@ -1,0 +1,29 @@
+
+/*----------------------------------------------------------------
+# Main
+----------------------------------------------------------------*/
+
+#main {
+    margin-top: -500px;
+    margin-left: -20px;
+    padding: 30px 100px;
+    transition: all 0.3s;
+    color: white;
+}
+
+
+@media (max-width: 1200px) {
+    #main {
+        padding: 20px;
+        margin-left:60px ;
+    }
+}
+ 
+#sidebar.expand .main {
+    margin-left: 70px;
+}
+
+
+#sidebar:not(.expand) #main {
+    margin-left: 70px;
+}

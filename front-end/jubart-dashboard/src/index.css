@@ -2,9 +2,9 @@
 
 :root {
   scroll-behavior: smooth;
-  --bgColor: #1b1a29; 
+  --bgColor: #14141a; 
   --primary: #F0B900;
-  --second: #DC5E86;
+  --second: #222133;
   --third: #808080; /* Gray */
   --fourth: #8A9A5B; /* Sage Green */
   --fifth: #6082B6; /* Glaucous */

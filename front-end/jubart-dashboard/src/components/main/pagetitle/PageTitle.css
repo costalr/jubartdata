@@ -1,0 +1,31 @@
+.pagetitle {
+    margin-bottom: 10px;
+}
+
+.pagetitle h1 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+
+.breadcrumb-item {
+    margin-right: 10px
+}
+
+.breadcrumb {
+    margin-left: 2px;
+    position: relative;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+
+.active {
+    position: absolute;
+    left: 25px;
+    top: 2px;
+}

@@ -1,0 +1,151 @@
+.data-cards {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    margin-left: -20px;
+    /* Definição do contêiner que contém todos os DataCards e organiza-os em uma coluna */
+}
+
+.data-card, 
+.export, 
+.import {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    position: relative;
+    /* Definições de layout básicas para data-card, export e import */
+}
+
+.export,
+.import {
+    margin-right: 50px;
+}
+
+
+.export > .main-value,
+.import > .main-value {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    height: 120px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 60px;
+    background-color: var(--second);
+    /* Estilo aplicado aos elementos .main-value dentro de .export e .import */
+
+}
+
+
+.import > .rent-value,
+.export > .rent-value {
+    width: 400px;
+    /* Definição de largura específica para elementos .rent-value dentro de .import e .export */
+
+}
+
+
+.variation {
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    left: 125px;
+    height: 5px;
+    width: 100px;
+    font-size: 15px;
+    background-color: var(--second);
+    /* Estilo base para a variação, posição e tamanho */
+
+}
+
+.variation i {
+    background-color: var(--second);
+    /* Background para o ícone de variação */
+
+}
+
+.rent-imp,
+.rent-exp {
+    position: absolute;
+    top: 10px;
+    left: 160px;
+    background-color: var(--second);
+    /* Estilos específicos para .rent-imp e .rent-exp que ajustam a posição e background */
+}
+
+.rent-imp {
+    left: 180px;
+}
+
+.volume-exp {
+    left: 110px;
+}
+
+ 
+.data-card .variation.positive {
+    color: green;
+    width: 70px;
+    /* Cor verde para variações positivas */
+}
+
+.data-card .variation.negative {
+    color: red;
+    width: 70px;
+    /* Cor vermelha para variações negativas */
+
+}
+
+.data-card span {
+    font-size: 20px;
+    background-color: var(--second);
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Estilo para span dentro de data-card */
+}
+
+.data-card p {
+    font-size: 30px;
+    background-color: var(--second);
+    color: var(--primary);
+    font-weight: bold;
+    /* Estilo para p dentro de data-card */
+
+}
+
+.export-icon, 
+.import-icon,
+.income-icon,
+.growth-icon,
+.midpriceImp-icon,
+.midpriceExp-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--second)
+
+}
+
+.export-icon,
+.growth-icon,
+.midpriceImp-icon,
+.midpriceExp-icon
+ {
+    top: 70px;
+    left: 20px;
+}
+
+.import-icon
+{
+    top: 70px;
+    left: 30px;
+}
+
+.income-icon {
+    top: 70px;
+    left: 25px;
+}
+

@@ -1,0 +1,16 @@
+.graphs {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Espaçamento entre os gráficos */
+}
+  
+.graph-container {
+    background-color: #2c2c2c; /* Cor de fundo do contêiner dos gráficos */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 92%; /* Defina a largura desejada */
+    height: 400px; /* Defina a altura desejada */
+    margin: 0 auto; /* Centralizar os gráficos horizontalmente */
+    position: relative;
+    margin-right: 40px;
+    top: -450px;
+}

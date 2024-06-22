@@ -1,3 +1,4 @@
+
 /* Define a posição relativa do contêiner de notificação */
 .nav-notice {
     position: relative;
@@ -24,7 +25,6 @@
 .header-nav .nav-icon svg {
     font-size: 5px;
     position: relative;
-    color: white;
     height: 30px;
 }
 
@@ -149,6 +149,7 @@
 .nav-item button {
     background-color: var(--bgColor);
     border: none;
+    color: white;
 }
 
 /* Estiliza o menu do avatar */
@@ -228,3 +229,4 @@
     top: -15px;
     
 }
+
